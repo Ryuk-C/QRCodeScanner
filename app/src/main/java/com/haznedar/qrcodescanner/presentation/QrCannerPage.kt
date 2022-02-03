@@ -71,7 +71,7 @@ fun QrScannerPage(
 
                     val previewView = PreviewView(context)
 
-                    val preview = androidx.camera.core.Preview.Builder().build()
+                    val preview = Preview.Builder().build()
 
                     val selector = CameraSelector.Builder()
                         .requireLensFacing(CameraSelector.LENS_FACING_BACK)
@@ -81,7 +81,7 @@ fun QrScannerPage(
 
                     val imageAnalysis = ImageAnalysis.Builder()
                         .setTargetResolution(Size(previewView.width, previewView.height))
-                        .setBackpressureStrategy(ImageAnalysis.STRATEGY_KEEP_ONLY_LATEST).build()
+                        .setBackpressureStrategy(STRATEGY_KEEP_ONLY_LATEST).build()
 
                     imageAnalysis.setAnalyzer(
                         ContextCompat.getMainExecutor(context),

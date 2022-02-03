@@ -71,14 +71,6 @@ dependencies {
     implementation "androidx.navigation:navigation-compose:2.4.0-rc01"
     implementation "com.google.accompanist:accompanist-flowlayout:0.17.0"
 
-    // Coroutines
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0-native-mt'
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.0-native-mt'
-
-    // Coroutine Lifecycle Scopes
-    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0"
-    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.4.0"
-
     //Compose-Lottie
     implementation 'com.airbnb.android:lottie-compose:4.2.2'
 

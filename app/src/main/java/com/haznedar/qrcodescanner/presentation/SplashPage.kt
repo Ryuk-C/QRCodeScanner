@@ -29,11 +29,9 @@ fun SplashPage(
     }
 
     Column(
-        //verticalArrangement = Arrangement.SpaceBetween,
         horizontalAlignment = Alignment.CenterHorizontally,
         modifier = Modifier
             .fillMaxSize()
-            //.background(RedVisne)
     ) {
 
         Column(
@@ -104,8 +102,7 @@ fun WelcomeLogo() {
 
         LottieAnimation(
             composition = compositionLoading,
-            progress = progressLoading,
-            //modifier = Modifier.size(45.dp)
+            progress = progressLoading
         )
     }
 
